@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- start::stylesheets -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/selectize.default.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <title>Farabi Digital Library</title>
+    <!-- end::stylesheets -->
+</head>
+<body dir="rtl">
+    <!-- start::header -->
+    <header class="p-lg-4 p-3 library-header position-sticky top-0">
+        <!-- start::desktop header -->
+        <div class="container-xl container-fluid d-lg-flex d-none flex-row align-items-center gap-5">
+            <div>
+                <a href="#">
+                    <img class="library-logo" src="./assets/img/logo-bg.png" alt="logo">
+                </a>
+            </div>
+            <div class="flex-grow-1 d-flex flex-row align-items-center gap-xl-5 gap-4">
+                <a class="text-white text-decoration-none" href="#">صفحه اصلی</a>
+                <a class="text-white text-decoration-none" href="#">جستجوی پیشرفته</a>
+                <a class="text-white text-decoration-none" href="#">پرسش‌های متداول</a>
+            </div>
+            <div class="d-flex flex-row align-items-center gap-3">
+                <a href="#" class="bg-white rounded-1 text-black text-decoration-none py-1 px-xl-4 px-3">تماس با ما</a>
+                <div class="d-flex flex-row align-items-center bg-white rounded-1 overflow-hidden">
+                    <a href="#" class="py-1 px-3 text-white text-decoration-none library-bg-active">فا</a>
+                    <a href="./en/index.html" class="py-1 px-3 text-black text-decoration-none">EN</a>
+                </div>
+            </div>
+        </div>
+        <!-- end::desktop header -->
+        <!-- start::mobile header -->
+        <div class="container d-lg-none d-flex align-items-center justify-content-center">
+            <div class="cursor-pointer position-absolute end-0 z-1 pe-3">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="bi bi-list text-white fs-1 d-flex"></i>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <img class="library-logo" src="./assets/img/logo-bg.png" alt="logo">
+                </a>
+            </div>
+        </div>
+        <!-- end::mobile header -->
+        <!-- start::offcanvas mobile header -->
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <a href="#" class="bg-white rounded-1 text-black text-decoration-none py-1 px-3 fs-6">تماس با ما</a>
+                </h5>
+                <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="d-flex flex-row align-items-center bg-white rounded-1 overflow-hidden lang">
+                    <a href="#" class="py-1 px-3 text-white text-decoration-none library-bg-active">فا</a>
+                    <a href="./en/index.html" class="py-1 px-3 text-black text-decoration-none">EN</a>
+                </div>
+                <div class="flex-grow-1 d-flex flex-column align-items-start gap-4 mt-5">
+                    <a class="text-white text-decoration-none" href="#">صفحه اصلی</a>
+                    <a class="text-white text-decoration-none" href="#">جستجوی پیشرفته</a>
+                    <a class="text-white text-decoration-none" href="#">پرسش‌های متداول</a>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex flex-column justify-content-center align-items-center mb-4">
+                <div class="d-flex gap-4 mb-2">
+                    <a href="#">
+                        <i class="bi bi-twitter text-white fs-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp text-white fs-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram text-white fs-4"></i>
+                    </a>
+                </div>
+                <div class="copy-right-header text-white text-center">
+                    حق کپی رایت متعلق به مرکز پژوهش‌های مجلس شورای اسلامی می‌باشد
+                </div>
+            </div>
+        </div>
+        <!-- end::offcanvas mobile header -->
+    </header>
+    <!-- end::header -->
+
+    <!-- start::title & search section -->
+    <section class="d-flex flex-column align-items-center justify-content-center library-title">
+        <!-- title -->
+        <h1 class="d-flex align-items-center justify-content-center position-relative p-0 px-sm-2">کتابخانه دیجیتال</h1>
+
+        <!-- search form -->
+        <div class="position-relative z-1 py-md-5 pt-3 pb-4 container-xl container-fluid">
+            <form action="#" method="post" class="d-flex flex-row flex-lg-nowrap flex-wrap align-items-center justify-content-lg-between justify-content-center gap-xxl-5 gap-lg-3">
+                <label class="library-primary-title library-mobile-w-100 mb-lg-0 mb-4">جستجو کنید</label>
+                <input type="text" placeholder="عبارت" class="library-input library-mobile-w-100 mb-lg-0 mb-4">
+                <div class="d-flex flex-column position-relative library-mobile-w-50 ps-4 mt-lg-0 mt-4">
+                    <label for="library-search-input" class="position-absolute top-0 library-label">جستجو</label>
+                    <select class="library-input select library-mobile-w-100" id="library-search-input">
+                        <option value="">تمام موارد</option>
+                        <option value="1">تست 1</option>
+                        <option value="2">تست 2</option>
+                        <option value="3">تست 3</option>
+                        <option value="4">تست 4</option>
+                        <option value="5">تست 5</option>
+                        <option value="6">تست 6</option>
+                        <option value="7">تست 7</option>
+                    </select>
+                </div>
+                <select class="library-input select library-mobile-w-50 mt-lg-0 mt-4" id="library-count-input">
+                    <option value="">تعداد نمایش نتایج</option>
+                    <option value="1">تست 1</option>
+                    <option value="2">تست 2</option>
+                    <option value="3">تست 3</option>
+                    <option value="4">تست 4</option>
+                    <option value="5">تست 5</option>
+                    <option value="6">تست 6</option>
+                    <option value="7">تست 7</option>
+                </select>
+                <button type="submit" class="border-0 rounded-1 py-1 px-5 library-primary-button mt-lg-0 mt-4">جستجو</button>
+            </form>
+        </div>
+    </section>
+    <!-- end::title & search section -->
+
+    <!-- start::last products section -->
+    <section class="library-last-products p-5">
+        <div class="container-xl container-fluid">
+            <div class="d-flex justify-content-between align-items-start">
+                <div class="d-flex flex-column">
+                    <span class="library-primary-title">تازه‌های کتابخانه</span>
+                    <a href="#" class="library-primary-show-all">مشاهده تمامی تازه <span class="me-2">></span></a>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme library-slider-section" id="library-last-products-slider">
+                <div class="item" data-hash="book-1">
+                    <div class="d-flex flex-sm-nowrap flex-wrap justify-content-sm-start justify-content-center">
+                        <img src="assets/img/book.png" alt="">
+                        <div class="library-slider-content d-flex flex-column me-sm-4 mt-sm-0 mt-4">
+                            <h4 class="library-slider-title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</h4>
+                            <div class="library-slider-caption">ناشر: مرکز پژوهش های مجلس شورای اسلامی</div>
+                            <div class="library-slider-caption">شماره سال: ۱۴۰۰</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-hash="book-2">
+                    <div class="d-flex flex-sm-nowrap flex-wrap justify-content-sm-start justify-content-center">
+                        <img src="assets/img/book.png" alt="">
+                        <div class="library-slider-content d-flex flex-column me-sm-4 mt-sm-0 mt-4">
+                            <h4 class="library-slider-title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</h4>
+                            <div class="library-slider-caption">ناشر: مرکز پژوهش های مجلس شورای اسلامی</div>
+                            <div class="library-slider-caption">شماره سال: ۱۴۰۰</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-hash="book-3">
+                    <div class="d-flex flex-sm-nowrap flex-wrap justify-content-sm-start justify-content-center">
+                        <img src="assets/img/book.png" alt="">
+                        <div class="library-slider-content d-flex flex-column me-sm-4 mt-sm-0 mt-4">
+                            <h4 class="library-slider-title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</h4>
+                            <div class="library-slider-caption">ناشر: مرکز پژوهش های مجلس شورای اسلامی</div>
+                            <div class="library-slider-caption">شماره سال: ۱۴۰۰</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-hash="book-4">
+                    <div class="d-flex flex-sm-nowrap flex-wrap justify-content-sm-start justify-content-center">
+                        <img src="assets/img/book.png" alt="">
+                        <div class="library-slider-content d-flex flex-column me-sm-4 mt-sm-0 mt-4">
+                            <h4 class="library-slider-title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</h4>
+                            <div class="library-slider-caption">ناشر: مرکز پژوهش های مجلس شورای اسلامی</div>
+                            <div class="library-slider-caption">شماره سال: ۱۴۰۰</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-hash="book-5">
+                    <div class="d-flex flex-sm-nowrap flex-wrap justify-content-sm-start justify-content-center">
+                        <img src="assets/img/book.png" alt="">
+                        <div class="library-slider-content d-flex flex-column me-sm-4 mt-sm-0 mt-4">
+                            <h4 class="library-slider-title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</h4>
+                            <div class="library-slider-caption">ناشر: مرکز پژوهش های مجلس شورای اسلامی</div>
+                            <div class="library-slider-caption">شماره سال: ۱۴۰۰</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-hash="book-6">
+                    <div class="d-flex flex-sm-nowrap flex-wrap justify-content-sm-start justify-content-center">
+                        <img src="assets/img/book.png" alt="">
+                        <div class="library-slider-content d-flex flex-column me-sm-4 mt-sm-0 mt-4">
+                            <h4 class="library-slider-title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</h4>
+                            <div class="library-slider-caption">ناشر: مرکز پژوهش های مجلس شورای اسلامی</div>
+                            <div class="library-slider-caption">شماره سال: ۱۴۰۰</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-hash="book-7">
+                    <div class="d-flex flex-sm-nowrap flex-wrap justify-content-sm-start justify-content-center">
+                        <img src="assets/img/book.png" alt="">
+                        <div class="library-slider-content d-flex flex-column me-sm-4 mt-sm-0 mt-4">
+                            <h4 class="library-slider-title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</h4>
+                            <div class="library-slider-caption">ناشر: مرکز پژوهش های مجلس شورای اسلامی</div>
+                            <div class="library-slider-caption">شماره سال: ۱۴۰۰</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" data-hash="book-8">
+                    <div class="d-flex flex-sm-nowrap flex-wrap justify-content-sm-start justify-content-center">
+                        <img src="assets/img/book.png" alt="">
+                        <div class="library-slider-content d-flex flex-column me-sm-4 mt-sm-0 mt-4">
+                            <h4 class="library-slider-title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</h4>
+                            <div class="library-slider-caption">ناشر: مرکز پژوهش های مجلس شورای اسلامی</div>
+                            <div class="library-slider-caption">شماره سال: ۱۴۰۰</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end::last products section -->
+
+    <!-- start::library list -->
+    <section class="library-gap">
+        <h5 class="library-section-title">فهرست مجموعه</h5>
+        <div class="owl-carousel owl-theme library-list-section" id="library-list-slider">
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="d-flex flex-column align-items-center library-list-link">
+                    <img src="assets/img/book-list.png">
+                    <div class="library-list-slider-caption">گزارش‌های مراکز پژوهشی داخل کشور</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end::library list -->
+
+    <footer>
+        <div class="container-xl container-fluid d-flex flex-lg-nowrap flex-wrap justify-content-between position-relative z-1">
+            <div class="text-center library-mobile-w-100">Parvan - کلیه حقوق محفوظ است © 1383-1395 R1-نسخه 4.9</div>
+            <div class="d-flex gap-5 justify-content-center text-center library-mobile-w-100 mt-lg-0 mt-4">
+                شبکه‌های مجازی
+                <div class="d-flex gap-3">
+                    <a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center library-mobile-w-100 mt-lg-0 mt-4">مرکز پژوهش‌های مجلس شورای اسلامی، 1395</div>
+        </div>
+    </footer>
+
+    <!-- start::scripts -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/selectize.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- start::custom script -->
+    <script>
+        $(function () {
+            $('#library-count-input, #library-search-input').selectize();
+            $('#library-last-products-slider').owlCarousel({
+                rtl: true,
+                loop: true,
+                margin: 10,
+                dots: true,
+                nav: false,
+                responsive: {
+                    0: { items: 1 },
+                    800: { items: 2 }
+                },
+                URLhashListener: true,
+                startPosition: 'book-1'
+            });
+            $('#library-list-slider').owlCarousel({
+                rtl: true,
+                loop: true,
+                margin: 10,
+                dots: true,
+                nav: false,
+                responsive: {
+                    0: { items: 2 },
+                    800: { items: 4 },
+                    1100: { items: 6 }
+                },
+                URLhashListener: true,
+                startPosition: 'book-1'
+            })
+        });
+    </script>
+    <!-- end::custom script -->
+    <!-- end::scripts -->
+</body>
+</html>
