@@ -173,6 +173,19 @@ table {
 	border-spacing: 0;
 }
 
+main {
+    min-height: calc(100vh - 164px);
+    padding-bottom: 64px;
+}
+
+breadcrumb a {
+    color: #747474;
+    text-decoration: none;
+}
+breadcrumb {
+    font-size: 12px;
+}
+
 [lang="fa"] * {
     font-family: IRANSansFaNum !important;
 }
@@ -388,7 +401,6 @@ header {
 }
 
 footer {
-    margin-top: 64px;
     background-color: #05425F;
     padding: 24px;
     position: relative;

@@ -1,0 +1,41 @@
+.faq {
+    background: #F3F8FB;
+}
+.faq .card {
+    border: 0;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.faq .card-header {
+    background: white;
+    border: 0;
+    text-align: right;
+    outline: none;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 16px 16px 16px 56px;
+    position: relative;
+}
+.faq .card-header .icon .bi.bi-chevron-compact-down {
+    display: flex;
+    color: #05425F;
+}
+.faq .card-header .icon {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+.faq .card-header.collapsed .icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+.faq .card-body {
+    background: #bcece026;
+    text-align: right;
+    color: #747474;
+    font-weight: 400;
+    font-size: 14px;
+}
