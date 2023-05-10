@@ -1,0 +1,26 @@
+.products-filter {
+    margin-bottom: 24px;
+}
+.products-sort {
+    color: #05425F;
+    font-weight: 500;
+    font-size: 14px;
+}
+.products-sort-items a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #303437;
+}
+.products-sort-items a.active {
+    color: #05425F;
+}
+.products-container {
+    display: flex ;
+}
+.products-container .item {
+    border-radius: 8px;
+    background: #BCECE0;
+}
+.products-container .item img {
+    width: 136px;
+}

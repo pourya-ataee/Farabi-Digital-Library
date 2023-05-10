@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- start::stylesheets -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/newbooks.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <!-- end::stylesheets -->
+    <title>Farabi Digital Library - New Books</title>
+</head>
+<body dir="rtl">
+    <!-- start::header -->
+    <header class="p-lg-4 p-3 library-header position-sticky top-0">
+        <!-- start::desktop header -->
+        <div class="container-xl container-fluid d-lg-flex d-none flex-row align-items-center gap-5">
+            <div>
+                <a href="index.html">
+                    <img class="library-logo" src="./assets/img/logo-bg.png" alt="logo">
+                </a>
+            </div>
+            <div class="flex-grow-1 d-flex flex-row align-items-center gap-xl-5 gap-4">
+                <a class="text-white text-decoration-none" href="index.html">صفحه اصلی</a>
+                <a class="text-white text-decoration-none" href="#">جستجوی پیشرفته</a>
+                <a class="text-white text-decoration-none" href="faq.html">پرسش‌های متداول</a>
+            </div>
+            <div class="d-flex flex-row align-items-center gap-3">
+                <a href="#" class="bg-white rounded-1 text-black text-decoration-none py-1 px-xl-4 px-3">تماس با ما</a>
+                <div class="d-flex flex-row align-items-center bg-white rounded-1 overflow-hidden">
+                    <a href="#" class="py-1 px-3 text-white text-decoration-none library-bg-active">فا</a>
+                    <a href="./en/index.html" class="py-1 px-3 text-black text-decoration-none">EN</a>
+                </div>
+            </div>
+        </div>
+        <!-- end::desktop header -->
+        <!-- start::mobile header -->
+        <div class="container d-lg-none d-flex align-items-center justify-content-center">
+            <div class="cursor-pointer position-absolute end-0 z-1 pe-3">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="bi bi-list text-white fs-1 d-flex"></i>
+                </a>
+            </div>
+            <div>
+                <a href="index.html">
+                    <img class="library-logo" src="./assets/img/logo-bg.png" alt="logo">
+                </a>
+            </div>
+        </div>
+        <!-- end::mobile header -->
+        <!-- start::offcanvas mobile header -->
+        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <a href="#" class="bg-white rounded-1 text-black text-decoration-none py-1 px-3 fs-6">تماس با ما</a>
+                </h5>
+                <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="d-flex flex-row align-items-center bg-white rounded-1 overflow-hidden lang">
+                    <a href="#" class="py-1 px-3 text-white text-decoration-none library-bg-active">فا</a>
+                    <a href="./en/index.html" class="py-1 px-3 text-black text-decoration-none">EN</a>
+                </div>
+                <div class="flex-grow-1 d-flex flex-column align-items-start gap-4 mt-5">
+                    <a class="text-white text-decoration-none" href="index.html">صفحه اصلی</a>
+                    <a class="text-white text-decoration-none" href="#">جستجوی پیشرفته</a>
+                    <a class="text-white text-decoration-none" href="faq.html">پرسش‌های متداول</a>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex flex-column justify-content-center align-items-center mb-4">
+                <div class="d-flex gap-4 mb-2">
+                    <a href="#">
+                        <i class="bi bi-twitter text-white fs-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp text-white fs-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram text-white fs-4"></i>
+                    </a>
+                </div>
+                <div class="copy-right-header text-white text-center">
+                    حق کپی رایت متعلق به مرکز پژوهش‌های مجلس شورای اسلامی می‌باشد
+                </div>
+            </div>
+        </div>
+        <!-- end::offcanvas mobile header -->
+    </header>
+    <!-- end::header -->
+
+    <main class="newbooks library-title-bg">
+        <!-- start::breadcrumb -->
+        <breadcrumb class="d-flex align-items-center gap-4 container py-2">
+            <a href="index.html">صفحه اصلی</a>
+            <i class="bi bi-chevron-left d-flex"></i>
+            <a href="newbooks.html">تازه‌های کتابخانه</a>
+        </breadcrumb>
+        <!-- end::breadcrumb -->
+
+        <!-- start::title section -->
+        <section class="d-flex flex-column align-items-center justify-content-center library-title">
+            <!-- title -->
+            <h1 class="d-flex align-items-center justify-content-center position-relative p-0 px-sm-2">تازه‌های کتابخانه</h1>
+        </section>
+        <!-- end::title section -->
+
+        <!-- start::products section -->
+        <section class="products">
+            <div class="d-flex align-items-center justify-content-between container products-filter">
+                <div class="d-flex gap-5 align-items-center">
+                    <div class="products-sort">مرتب سازی براساس: </div>
+                    <div class="d-flex align-items-center gap-3 products-sort-items">
+                        <a href="#">عنوان</a>
+                        <a class="active" href="#">پدیدآور اصلی</a>
+                        <a href="#">ناشر</a>
+                        <a href="#">سال انتشار</a>
+                        <a href="#">موضوع‌ها</a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-5 products-sort-items">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a class="active" href="#">3</a>
+                    <span>...</span>
+                    <a href="#">6</a>
+                </div>
+            </div>
+            <div class="products-container container">
+                <div class="item d-flex align-items-center p-4">
+                    <div>
+                        <img src="assets/img/new-book.png" alt="">
+                    </div>
+                    <div class="item-content">
+                        <div class="title">مبانی تحلیل های اقتصاد رفتاری(جلد سوم: تنزیل زمان)</div>
+                        <div class="description">مرکز مطالعات مدیریت دانشگاه تربیت مدرس.</div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end::products section -->
+    </main>
+
+    <!-- start::footer section -->
+    <footer>
+        <div class="container-xl container-fluid d-flex flex-lg-nowrap flex-wrap justify-content-between position-relative z-1">
+            <div class="text-center library-mobile-w-100">Parvan - کلیه حقوق محفوظ است © 1383-1395 R1-نسخه 4.9</div>
+            <div class="d-flex gap-5 justify-content-center text-center library-mobile-w-100 mt-lg-0 mt-4">
+                شبکه‌های مجازی
+                <div class="d-flex gap-3">
+                    <a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center library-mobile-w-100 mt-lg-0 mt-4">مرکز پژوهش‌های مجلس شورای اسلامی، 1395</div>
+        </div>
+    </footer>
+    <!-- end::footer section -->
+
+    <!-- start::scripts -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- end::scripts -->
+</body>
+</html>
