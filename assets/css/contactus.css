@@ -1,0 +1,45 @@
+.title-description {
+    font-size: 14px;
+    font-weight: 400;
+    color: #747474;
+}
+.contact-content {
+    background: #E7F2F8;
+    padding: 8px 24px;
+    border-radius: 10px;
+}
+.contact-content table {
+    width: 100%;
+}
+.contact-content table tr {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #05425f4d;
+}
+.contact-content table tr:last-child {
+    border-bottom: 0;
+}
+[lang="fa"] .contact-content table td:first-child {
+    padding-left: 24px;
+}
+[lang="en"] .contact-content table td:first-child {
+    padding-right: 24px;
+}
+.contact-content table td {
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact-content table a {
+    color: #05425F;
+}
+.contact-content table td .address {
+    color: #747474;
+    margin-bottom: 8px;
+}
+.contact-content table td .address-number {
+    font-weight: 500;
+}
+.contact-content table td .address-number span {
+    color: #05425F;
+}
