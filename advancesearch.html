@@ -8,6 +8,7 @@
 
     <!-- start::stylesheets -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/advancesearch.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./assets/css/selectize.default.min.css">
@@ -104,44 +105,152 @@
             <a href="advancesearch.html">جستجوی پیشرفته</a>
         </breadcrumb>
         <!-- end::breadcrumb -->
-        <!-- start::title -->
-        <section class="container text-end pt-4 d-flex align-items-center">
-            <h4 class="fs-2 fw-bold ms-5">جستجوی پیشرفته</h4>
+        <!-- start::title & search -->
+        <section class="container pt-4 mb-5">
             <!-- start::search form -->
-            <form action="#" method="post" class="d-flex flex-column flex-grow-1">
-                <!-- start::search row -->
-                <div class="d-flex flex-row justify-content-between align-items-start">
-                    <div class="d-flex flex-column">
-                        <input type="text" placeholder="عبارت" class="library-input">
-                        <div class="d-flex justify-content-between mt-2">
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="v-1" name="" value="و">
-                                <label class="fw-light" for="v-1">و</label><br>
+            <form action="#" method="post">
+                <div class="d-flex align-items-center border-bottom pb-5 mb-lg-5 mb-4 flex-wrap">
+                    <h1 class="fs-2 fw-bold ms-xxl-5">جستجوی پیشرفته</h1>
+                    <div class="d-flex flex-column flex-grow-1 gap-lg-4">
+                        <!-- start::search row -->
+                        <div class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center align-items-lg-start align-items-center flex-lg-nowrap flex-wrap border-lg-0 custom-border-bottom pb-lg-0 pb-4">
+                            <div class="d-flex flex-column">
+                                <input type="text" placeholder="عبارت" class="library-input">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="and-1" name="radio-1" value="و">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="and-1">و</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="or-1" name="radio-1" value="r">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="or-1">یا</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="except-1" name="radio-1" value="except">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="except-1">به جز</label>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="r-1" name="" value="r">
-                                <label class="fw-light" for="r-1">ر</label><br>
-                            </div>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="except-1" name="" value="except">
-                                <label class="fw-light" for="except-1">به جز</label>
+                            <select class="library-input select mt-lg-0 mt-4">
+                                <option value="">تمام واژه‌ها</option>
+                                <option value="1">تست 1</option>
+                                <option value="2">تست 2</option>
+                                <option value="3">تست 3</option>
+                                <option value="4">تست 4</option>
+                                <option value="5">تست 5</option>
+                                <option value="6">تست 6</option>
+                                <option value="7">تست 7</option>
+                            </select>
+                            <div class="d-flex flex-lg-row flex-column gap-lg-4 gap-1 align-items-lg-center align-items-start mt-lg-0 mt-4">
+                                <label class="ms-3 fw-light">جستجو</label>
+                                <select class="library-input select">
+                                    <option value="">تمام موارد</option>
+                                    <option value="1">تست 1</option>
+                                    <option value="2">تست 2</option>
+                                    <option value="3">تست 3</option>
+                                    <option value="4">تست 4</option>
+                                    <option value="5">تست 5</option>
+                                    <option value="6">تست 6</option>
+                                    <option value="7">تست 7</option>
+                                </select>
                             </div>
                         </div>
+                        <!-- end::search row -->
+                        <!-- start::search row -->
+                        <div class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center align-items-lg-start align-items-center flex-lg-nowrap flex-wrap mt-lg-0 mt-4 border-lg-0 custom-border-bottom pb-lg-0 pb-4">
+                            <div class="d-flex flex-column">
+                                <input type="text" placeholder="عبارت" class="library-input">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="and-2" name="radio-2" value="و">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="and-2">و</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="or-2" name="radio-2" value="r">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="or-2">یا</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="except-2" name="radio-2" value="except">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="except-2">به جز</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <select class="library-input select mt-lg-0 mt-4">
+                                <option value="">تمام واژه‌ها</option>
+                                <option value="1">تست 1</option>
+                                <option value="2">تست 2</option>
+                                <option value="3">تست 3</option>
+                                <option value="4">تست 4</option>
+                                <option value="5">تست 5</option>
+                                <option value="6">تست 6</option>
+                                <option value="7">تست 7</option>
+                            </select>
+                            <div class="d-flex flex-lg-row flex-column gap-lg-4 gap-1 align-items-lg-center align-items-start mt-lg-0 mt-4">
+                                <label class="ms-3 fw-light">جستجو</label>
+                                <select class="library-input select">
+                                    <option value="">تمام موارد</option>
+                                    <option value="1">تست 1</option>
+                                    <option value="2">تست 2</option>
+                                    <option value="3">تست 3</option>
+                                    <option value="4">تست 4</option>
+                                    <option value="5">تست 5</option>
+                                    <option value="6">تست 6</option>
+                                    <option value="7">تست 7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- end::search row -->
+                        <!-- start::search row -->
+                        <div class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center align-items-lg-start align-items-center flex-lg-nowrap flex-wrap mt-lg-0 mt-4">
+                            <div class="d-flex flex-column">
+                                <input type="text" placeholder="عبارت" class="library-input">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="and-3" name="radio-3" value="و">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="and-3">و</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="or-3" name="radio-3" value="r">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="or-3">یا</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="except-3" name="radio-3" value="except">
+                                        <label class="pe-2 fw-light cursor-pointer user-select-none" for="except-3">به جز</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <select class="library-input select mt-lg-0 mt-4">
+                                <option value="">تمام واژه‌ها</option>
+                                <option value="1">تست 1</option>
+                                <option value="2">تست 2</option>
+                                <option value="3">تست 3</option>
+                                <option value="4">تست 4</option>
+                                <option value="5">تست 5</option>
+                                <option value="6">تست 6</option>
+                                <option value="7">تست 7</option>
+                            </select>
+                            <div class="d-flex flex-lg-row flex-column gap-lg-4 gap-1 align-items-lg-center align-items-start mt-lg-0 mt-4">
+                                <label class="ms-3 fw-light">جستجو</label>
+                                <select class="library-input select">
+                                    <option value="">تمام موارد</option>
+                                    <option value="1">تست 1</option>
+                                    <option value="2">تست 2</option>
+                                    <option value="3">تست 3</option>
+                                    <option value="4">تست 4</option>
+                                    <option value="5">تست 5</option>
+                                    <option value="6">تست 6</option>
+                                    <option value="7">تست 7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- end::search row -->
                     </div>
-                    <select class="library-input select">
-                        <option value="">تمام واژه‌ها</option>
-                        <option value="1">تست 1</option>
-                        <option value="2">تست 2</option>
-                        <option value="3">تست 3</option>
-                        <option value="4">تست 4</option>
-                        <option value="5">تست 5</option>
-                        <option value="6">تست 6</option>
-                        <option value="7">تست 7</option>
-                    </select>
-                    <div class="d-flex gap-4 align-items-center">
-                        <label class="ms-3 fw-light">جستجو</label>
+                </div>
+                <div class="d-flex flex-lg-row flex-column justify-content-center justify-content-lg-between align-items-lg-start align-items-center mt-lg-4 flex-wrap">
+                    <div class="d-flex gap-xl-4 gap-1 align-items-center mt-lg-0 mt-4 justify-content-center flex-sm-nowrap flex-wrap">
+                        <label class="ms-xxl-3 ms-lg-1 ms-3 fw-light">جستجو</label>
                         <select class="library-input select">
-                            <option value="">تمام موارد</option>
+                            <option value="">همه مجموعه‌ها</option>
                             <option value="1">تست 1</option>
                             <option value="2">تست 2</option>
                             <option value="3">تست 3</option>
@@ -151,41 +260,10 @@
                             <option value="7">تست 7</option>
                         </select>
                     </div>
-                </div>
-                <!-- end::search row -->
-                <!-- start::search row -->
-                <div class="d-flex flex-row justify-content-between align-items-start mt-4">
-                    <div class="d-flex flex-column">
-                        <input type="text" placeholder="عبارت" class="library-input">
-                        <div class="d-flex justify-content-between mt-2">
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="v-1" name="" value="و">
-                                <label class="fw-light" for="v-1">و</label><br>
-                            </div>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="r-1" name="" value="r">
-                                <label class="fw-light" for="r-1">ر</label><br>
-                            </div>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="except-1" name="" value="except">
-                                <label class="fw-light" for="except-1">به جز</label>
-                            </div>
-                        </div>
-                    </div>
-                    <select class="library-input select">
-                        <option value="">تمام واژه‌ها</option>
-                        <option value="1">تست 1</option>
-                        <option value="2">تست 2</option>
-                        <option value="3">تست 3</option>
-                        <option value="4">تست 4</option>
-                        <option value="5">تست 5</option>
-                        <option value="6">تست 6</option>
-                        <option value="7">تست 7</option>
-                    </select>
-                    <div class="d-flex gap-4 align-items-center">
-                        <label class="ms-3 fw-light">جستجو</label>
+                    <div class="d-flex gap-xl-4 gap-1 align-items-center mt-lg-0 mt-4 justify-content-center flex-sm-nowrap flex-wrap">
+                        <label class="ms-xxl-3 ms-lg-1 ms-3 fw-light">جستجو</label>
                         <select class="library-input select">
-                            <option value="">تمام موارد</option>
+                            <option value="">منابع دیجیتال و غیر دیجیتال</option>
                             <option value="1">تست 1</option>
                             <option value="2">تست 2</option>
                             <option value="3">تست 3</option>
@@ -195,41 +273,10 @@
                             <option value="7">تست 7</option>
                         </select>
                     </div>
-                </div>
-                <!-- end::search row -->
-                <!-- start::search row -->
-                <div class="d-flex flex-row justify-content-between align-items-start mt-4">
-                    <div class="d-flex flex-column">
-                        <input type="text" placeholder="عبارت" class="library-input">
-                        <div class="d-flex justify-content-between mt-2">
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="v-1" name="" value="و">
-                                <label class="fw-light" for="v-1">و</label><br>
-                            </div>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="r-1" name="" value="r">
-                                <label class="fw-light" for="r-1">ر</label><br>
-                            </div>
-                            <div class="d-flex align-items-center gap-2">
-                                <input type="radio" id="except-1" name="" value="except">
-                                <label class="fw-light" for="except-1">به جز</label>
-                            </div>
-                        </div>
-                    </div>
-                    <select class="library-input select">
-                        <option value="">تمام واژه‌ها</option>
-                        <option value="1">تست 1</option>
-                        <option value="2">تست 2</option>
-                        <option value="3">تست 3</option>
-                        <option value="4">تست 4</option>
-                        <option value="5">تست 5</option>
-                        <option value="6">تست 6</option>
-                        <option value="7">تست 7</option>
-                    </select>
-                    <div class="d-flex gap-4 align-items-center">
-                        <label class="ms-3 fw-light">جستجو</label>
+                    <div class="d-flex gap-xl-4 gap-1 align-items-center mt-lg-0 mt-4 justify-content-center flex-sm-nowrap flex-wrap">
+                        <label class="ms-xxl-3 ms-lg-1 ms-3 fw-light">جستجو</label>
                         <select class="library-input select">
-                            <option value="">تمام موارد</option>
+                            <option value="">منابع دیجیتال و غیر دیجیتال</option>
                             <option value="1">تست 1</option>
                             <option value="2">تست 2</option>
                             <option value="3">تست 3</option>
@@ -239,13 +286,56 @@
                             <option value="7">تست 7</option>
                         </select>
                     </div>
+                    <div class="mt-xxl-0 mt-4 w-xxl-fit custom-w-100 text-center">
+                        <button type="submit" class="border-0 rounded-1 py-1 px-5 library-primary-button">جستجو</button>
+                    </div>
                 </div>
-                <!-- end::search row -->
             </form>
             <!-- end::search form -->
         </section>
-        <!-- end::title -->
-        
+        <!-- end::title & search -->
+        <!-- start::read more -->
+        <section class="pt-5 container">
+            <h5 class="library-section-title">استراتژی جستجو</h5>
+            <p class="search-paragraph">
+                استفاده از جستجوی ترکیبی، در افزایش بازیابی رکوردهای مرتبط با موضوع تحقیق بسیار موثر است. بدین منظور می توانید با توجه
+                به مثال های زیر از عملگرهای منطقی «و»، «یا»، «بجز» برای ترکیب کلیدواژه های مورد نظرتان استفاده کنید:
+                <br /><br />
+                بودجه ریزی «و» پارلمان: فرض کنیم موضوع تحقیق شما " روشهای بهبود فرایند بررسی بودجه در پارلمان" است. در این حالت شما باید
+                دو کلیدواژه "بودجه" و "پارلمان" را با استفاده از عملگر «و» ترکیب کنید. با این عملگر دامنه جستجوی شما خاص تر خواهد شد و
+                رکوردهایی بازیابی می شوند که هر دو کلمه را داشته باشند. این عملگر پرکاربردترین عملگر در جستجو می باشد.
+                <br /><br />
+                <div class="w-100 text-center">
+                    <div class="collapse" id="read-more">
+                        <div class="card card-body p-0 border-0">
+                            <p class="search-paragraph">
+                                گردشگری «یا» توریسم: رکوردهایی یافت می شوند که حداقل یکی از دو کلمه را داشته باشند. این عملگر برای مفاهیم مترادف و هم
+                                خانواده کاربرد دارد. با این عملگر دامنه جستجوی شما گسترش خواهد یافت. همچنین برای جستجوی کلمات دارای رسم الخط مختلف
+                                (تهران «یا» طهران) یا در جستجوهایی که برای یک مفهوم چند معادل وجود دارد نیز بسیار مناسب است. مانند: کامپیوتر «یا»
+                                رایانه، مجازی «یا» سایبری، سوبسید «یا» یارانه، بودجه ریزی «یا» بودجه بندی، مجلس «یا» پارلمان
+                                <br /><br />
+                                بودجه ریزی «بجز» قانون: رکوردهایی بازیابی می شوند که شامل کلمه" بودجه ریزی" هستند اما واژه " قانون" در آنها وجود ندارد.
+                                اگر بخواهید کلیدواژه یا موضوعی که مدنظر شما نیست، در رکوردهای شما بازیابی نشود، از این عملگر استفاده کنید.
+                                برای جستجوی دقیق می توانید فیلد مورد جستجو را نیز تعیین نمایید. برای مثال، اگر می خواهید عبارت مورد نظر شما در "عنوان"
+                                کتاب یا گزارش وجود داشته باشد، در بخش «عبارت جستجو»، گزینه جستجو در «تمام موارد» را به «عنوان» تغییر دهید. استفاده از
+                                این گزینه نیز در بازیابی رکوردهای مرتبط، تاثیر زیادی دارد.
+                                <br /><br />
+                                اگر به طور مشخص به دنبال یک نوع منبع اطلاعاتی هستید، برای مثال فقط "کتاب" نیاز دارید، در بخش «محدودیت ها»، می توانید نوع
+                                منبع را به «کتاب» تغییر دهید. در این حالت فقط در بانک کتاب ها جستجو انجام خواهد شد و سایر منابع بازیابی نخواهند شد.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn d-flex m-auto align-items-center read-more collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#read-more" aria-expanded="false"
+                        aria-controls="read-more">
+                        نمایش بیشتر
+                        <span class="icon me-2">
+                            <i class="bi bi-chevron-up d-flex"></i>
+                        </span>
+                    </button>
+                </div>
+            </p>
+        </section>
+        <!-- end::read more -->
     </main>
 
     <!-- start::footer section -->
@@ -274,12 +364,17 @@
 
     <!-- start::scripts -->
     <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/selectize.min.js"></script>
     <!-- start::custom script -->
     <script>
         $(function () {
             $('.library-input.select').selectize();
         });
+        (function () {
+            const collapseElementList = document.querySelectorAll('.collapse')
+            const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, hide))
+        })();
     </script>
     <!-- end::custom script -->
     <!-- end::scripts -->

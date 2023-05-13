@@ -1,0 +1,22 @@
+.search-paragraph {
+    font-weight: 400;
+    color: #747474;
+    text-align: justify;
+}
+.read-more {
+    outline: none;
+    border: 0 !important;
+}
+.read-more .icon {
+    transition: 0.3s;
+}
+.read-more.collapsed .icon {
+    transform: rotate(180deg) !important;
+}
+@media (max-width: 1399px) {
+    .advancesearch h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 36px;
+    }
+}

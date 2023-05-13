@@ -400,6 +400,25 @@ header {
     max-width: 200px;
 }
 
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+input[type="radio"] {
+    accent-color: #05425F;
+    position: relative;
+}
+input[type="radio"]:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 3px solid #05425F;
+    border-radius: 50%;
+}
+
 footer {
     background-color: #05425F;
     padding: 24px;
@@ -423,6 +442,27 @@ footer:before {
 footer * {
     color: white;
     font-size: 14px;
+}
+.custom-w-100 {
+    width: 100% !important;
+
+}
+.custom-border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+@media (min-width: 1400px) {
+    .w-xxl-fit {
+        width: fit-content !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .w-lg-fit {
+        width: fit-content !important;
+    }
+    .border-lg-0 {
+        border: 0 !important;
+    }
 }
 
 @media (max-width: 991px) {
