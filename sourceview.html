@@ -32,7 +32,7 @@
                 <a href="contactus.html" class="bg-white rounded-1 text-black text-decoration-none py-1 px-xl-4 px-3">تماس با ما</a>
                 <div class="d-flex flex-row align-items-center bg-white rounded-1 overflow-hidden">
                     <a href="#" class="py-1 px-3 text-white text-decoration-none library-bg-active">فا</a>
-                    <a href="./en/searchresult.html" class="py-1 px-3 text-black text-decoration-none">EN</a>
+                    <a href="./en/sourceview.html" class="py-1 px-3 text-black text-decoration-none">EN</a>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
             <div class="offcanvas-body">
                 <div class="d-flex flex-row align-items-center bg-white rounded-1 overflow-hidden lang">
                     <a href="#" class="py-1 px-3 text-white text-decoration-none library-bg-active">فا</a>
-                    <a href="./en/searchresult.html" class="py-1 px-3 text-black text-decoration-none">EN</a>
+                    <a href="./en/sourceview.html" class="py-1 px-3 text-black text-decoration-none">EN</a>
                 </div>
                 <div class="flex-grow-1 d-flex flex-column align-items-start gap-4 mt-5">
                     <a class="text-white text-decoration-none" href="index.html">صفحه اصلی</a>
@@ -93,7 +93,7 @@
 
     <main class="source-view">
         <!-- start::breadcrumb -->
-        <breadcrumb class="d-flex align-items-center gap-4 container py-2">
+        <breadcrumb class="d-flex flex-wrap align-items-center gap-md-4 gap-2 container py-2">
             <a href="index.html">صفحه اصلی</a>
             <i class="bi bi-chevron-left d-flex"></i>
             <a href="advancesearch.html">جستجوی پیشرفته</a>
@@ -163,10 +163,10 @@
                 </table>
             </div>
             <div class="me-lg-3 mb-lg-0 mb-5">
-                <div class="position-relative">
+                <div class="position-relative text-center overflow-hidden">
                     <img width="400" src="assets/img/book-bg.png" alt="">
                     <img class="position-absolute translate-middle top-50 start-50" width="200" src="assets/img/book-2.png" alt="">
-                    <div class="position-absolute bottom-0 d-flex w-100 justify-content-evenly">
+                    <div class="position-absolute bottom-0 start-50 d-flex flex-wrap w-100 justify-content-evenly translate-middle-x" style="max-width: 400px;">
                         <a class="text-black d-felx align-items-center" href="#"><i class="bi bi-share color-secondary"></i> ارسال
                             به دوستان</a>
                         <span class="d-felx align-items-center"><span class="color-secondary">7</span> مرتبه مشاهده شده</span>
@@ -178,20 +178,24 @@
 
         <!-- start::actions -->
         <div class="top-actions">
-            <div class="d-flex justify-content-between container mt-4 py-4">
-                <button type="button" style="background: #18A558;">محتوای دیجیتالی</button>
-                <div class="d-flex gap-5">
+            <div class="d-flex flex-md-row flex-column justify-content-between align-items-center gap-md-0 gap-4 container mt-4 py-4">
+                <span>
+                    <button type="button" style="background: #18A558;">محتوای دیجیتالی</button>
+                </span>
+                <div class="d-flex flex-sm-row flex-column gap-sm-5 gap-4">
                     <button type="button" class="d-flex align-items-center gap-3" style="background: #00A5FF;"><i class="bi bi-eye d-flex"></i> مشاهده</button>
                     <button type="button" class="d-flex align-items-center gap-3" style="background: #05425F;"><i class="bi bi-download d-flex"></i> دانلود</button>
                 </div>
             </div>
         </div>
         <div class="bottom-actions">
-            <div class="d-flex justify-content-between container py-5">
-                <button type="button" style="background: #18A558;">جستجو در منبع</button>
-                <form action="#" method="post" class="d-flex align-items-center gap-5">
+            <div class="d-flex flex-lg-row flex-column justify-content-between align-items-center container py-5">
+                <span class="mb-lg-0 mb-4">
+                    <button type="button" style="background: #18A558;">جستجو در منبع</button>
+                </span>
+                <form action="#" method="post" class="d-flex flex-lg-row flex-column align-items-center gap-lg-5 gap-4">
                     <input type="text" placeholder="عبارت" class="library-input bg-white">
-                    <div class="d-flex flex-column position-relative library-mobile-w-50 ps-4 mt-lg-0 mt-4">
+                    <div class="d-flex flex-column position-relative w-lg-fit custom-w-100 mt-lg-0 mt-4">
                         <label for="library-search-input" class="position-absolute top-0 library-label fs-14px">ترتیب براساس</label>
                         <select class="library-input bg-white select library-mobile-w-100" id="library-search-input">
                             <option value="">شماره صفحه</option>
