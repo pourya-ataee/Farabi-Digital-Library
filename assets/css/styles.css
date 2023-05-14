@@ -450,6 +450,15 @@ footer * {
 .custom-border-bottom {
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
+.color-secondary {
+    color: #05425F
+}
+.color-text {
+    color: #747474;
+}
+.fs-14px {
+    font-size: 14px;
+}
 @media (min-width: 1400px) {
     .w-xxl-fit {
         width: fit-content !important;

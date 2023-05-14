@@ -7,8 +7,9 @@
     <!-- start::stylesheets -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/sourceview.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/selectize.default.min.css">
     <!-- end::stylesheets -->
     <title>Farabi Digital Library - Search result</title>
 </head>
@@ -90,7 +91,7 @@
     </header>
     <!-- end::header -->
 
-    <main class="source-view library-title-bg">
+    <main class="source-view">
         <!-- start::breadcrumb -->
         <breadcrumb class="d-flex align-items-center gap-4 container py-2">
             <a href="index.html">صفحه اصلی</a>
@@ -102,9 +103,112 @@
             <a href="sourceview.html">روند تغییر اعتبارات تملک دارایی ها</a>
         </breadcrumb>
         <!-- end::breadcrumb -->
-        <div class="clearfix container">
-            <img class="float-start" width="230" src="assets/img/book-2.png" alt="">
+
+        <!-- start::book data -->
+        <div class="container d-flex flex-lg-row flex-column-reverse mt-2">
+            <div>
+                <h1 class="fs-6 fw-bold lh-lg">طراحی شبکه ارتباطی و توسعه سازو کارهای دستورگذاری مرکز پژوهش های مجلس شورای اسلامی: عنوان گزارش سوم تدوین شبکه سیاست
+                پژوهی ایران</h1>
+                <span class="fw-light fs-14px color-text">رازانی، بهروز</span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>شماره راهنما: </td>
+                            <td>13458 </td>
+                        </tr>
+                        <tr>
+                            <td>كليد واژه: </td>
+                            <td>حاکمیت شرکتی. سهام داران. شرکت های دولتی. شرکت های تجاری. شفافیت. کارآیی </td>
+                        </tr>
+                        <tr>
+                            <td>پدید آور: </td>
+                            <td>رازانی، بهروز</td>
+                        </tr>
+                        <tr>
+                            <td>عنوان و شرح مسئولیت: </td>
+                            <td>ضرورت استقرار حاکمیت شرکتی و ارائه پیشنهاد برای حمایت از حقوق سهام داران خرد در ایران
+                            / تهیه و تدوین حسین هرورانی ؛ ناظر علمی فتح اله تاری.</td>
+                        </tr>
+                        <tr>
+                            <td>عنوان و شرح مسئولیت: </td>
+                            <td>ضرورت استقرار حاکمیت شرکتی و ارائه پیشنهاد برای حمایت از حقوق سهام داران خرد در ایران
+                            / تهیه و تدوین حسین هرورانی ؛ ناظر علمی فتح اله تاری.</td>
+                        </tr>
+                        <tr>
+                            <td>یادداشت: </td>
+                            <td>کتابنامه</td>
+                        </tr>
+                        <tr>
+                            <td>یادداشت: </td>
+                            <td>کتابنامه</td>
+                        </tr>
+                        <tr>
+                            <td>كليد واژه: </td>
+                            <td>حاکمیت شرکتی. سهام داران. شرکت های دولتی. شرکت های تجاری. شفافیت. کارآیی حاکمیت شرکتی. سهام داران. شرکت های دولتی. شرکت
+                            های تجاری. شفافیت. کارآیی.</td>
+                        </tr>
+                        <tr>
+                            <td>توصیف ظاهری: </td>
+                            <td>24ص.: جدول</td>
+                        </tr>
+                        <tr>
+                            <td>نشر: </td>
+                            <td>تهران : مجلس شورای اسلامی، مرکز پژوهشها، 1392.</td>
+                        </tr>
+                        <tr>
+                            <td>نشر: </td>
+                            <td>تهران : مجلس شورای اسلامی، مرکز پژوهشها، 1392.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="me-lg-3 mb-lg-0 mb-5">
+                <div class="position-relative">
+                    <img width="400" src="assets/img/book-bg.png" alt="">
+                    <img class="position-absolute translate-middle top-50 start-50" width="200" src="assets/img/book-2.png" alt="">
+                    <div class="position-absolute bottom-0 d-flex w-100 justify-content-evenly">
+                        <a class="text-black d-felx align-items-center" href="#"><i class="bi bi-share color-secondary"></i> ارسال
+                            به دوستان</a>
+                        <span class="d-felx align-items-center"><span class="color-secondary">7</span> مرتبه مشاهده شده</span>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- end::book data -->
+
+        <!-- start::actions -->
+        <div class="top-actions">
+            <div class="d-flex justify-content-between container mt-4 py-4">
+                <button type="button" style="background: #18A558;">محتوای دیجیتالی</button>
+                <div class="d-flex gap-5">
+                    <button type="button" class="d-flex align-items-center gap-3" style="background: #00A5FF;"><i class="bi bi-eye d-flex"></i> مشاهده</button>
+                    <button type="button" class="d-flex align-items-center gap-3" style="background: #05425F;"><i class="bi bi-download d-flex"></i> دانلود</button>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-actions">
+            <div class="d-flex justify-content-between container py-5">
+                <button type="button" style="background: #18A558;">جستجو در منبع</button>
+                <form action="#" method="post" class="d-flex align-items-center gap-5">
+                    <input type="text" placeholder="عبارت" class="library-input bg-white">
+                    <div class="d-flex flex-column position-relative library-mobile-w-50 ps-4 mt-lg-0 mt-4">
+                        <label for="library-search-input" class="position-absolute top-0 library-label fs-14px">ترتیب براساس</label>
+                        <select class="library-input bg-white select library-mobile-w-100" id="library-search-input">
+                            <option value="">شماره صفحه</option>
+                            <option value="1">تست 1</option>
+                            <option value="2">تست 2</option>
+                            <option value="3">تست 3</option>
+                            <option value="4">تست 4</option>
+                            <option value="5">تست 5</option>
+                            <option value="6">تست 6</option>
+                            <option value="7">تست 7</option>
+                        </select>
+                    </div>
+                    <button type="submit" style="background: #05425F;">جستجو</button>
+                </form>
+            </div>
+        </div>
+        <!-- end::actions -->
     </main>
 
     <!-- start::footer section -->
@@ -131,7 +235,34 @@
     <!-- end::footer section -->
 
     <!-- start::scripts -->
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/selectize.min.js"></script>
+    <script>
+        $(function () {
+            $('.library-input.select').selectize({ dropdownDirection: 'up' });
+            if (!window.Selectize.prototype.positionDropdownOriginal) {
+                window.Selectize.prototype.positionDropdownOriginal = window.Selectize.prototype.positionDropdown;
+                window.Selectize.prototype.positionDropdown = function () {
+                    if (this.settings.dropdownDirection === 'up') {
+                        let $control = this.$control;
+                        let offset = this.settings.dropdownParent === 'body' ? $control.offset() : $control.position();
+
+                        this.$dropdown.css({
+                            width: $control.outerWidth(),
+                            top: offset.top - this.$dropdown.outerHeight(),
+                            left: offset.left
+                        });
+                        this.$dropdown.addClass('direction-' + this.settings.dropdownDirection);
+                        this.$control.addClass('direction-' + this.settings.dropdownDirection);
+                        this.$wrapper.addClass('direction-' + this.settings.dropdownDirection);
+                    } else {
+                        window.Selectize.prototype.positionDropdownOriginal.apply(this, arguments);
+                    }
+                };
+            }
+        });
+    </script>
     <!-- start::custom script -->
 </body>
 </html>

@@ -1,0 +1,23 @@
+table td:first-child {
+    font-size: 14px;
+    font-weight: 400;
+    color: #05425F;
+    padding: 16px 0 16px 16px;
+}
+table td:last-child {
+    font-size: 14px;
+    font-weight: 400;
+    color: #747474;
+    padding: 16px 0;
+}
+.top-actions {
+    background: #F3F8FB;
+}
+.bottom-actions {
+    background: #E7F2F8;
+}
+.top-actions button, .bottom-actions button {
+    border: 0;
+    padding: 8px 36px;
+    color: white;
+}
