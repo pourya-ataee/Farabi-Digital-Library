@@ -1,0 +1,38 @@
+.categoryview .library-title>h1 {
+    min-height: 200px !important;
+    font-size: 3rem !important;
+}
+.categoryview .library-title {
+    min-height: 200px;
+}
+.categoryview .owl-carousel .item {
+    max-width: 230px;
+    margin: auto;
+}
+.categoryview .carousel-container {
+    width: calc(100% - 150px)
+}
+.categoryview .carousel-container .item {
+    position: relative;
+}
+.categoryview .carousel-container .item .on-hover {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00a5ffde;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+}
+.categoryview .carousel-container .item:hover .on-hover {
+    display: flex;
+}
+@media (max-width: 575px) {
+    .categoryview .carousel-container {
+        width: 100%
+    }
+}

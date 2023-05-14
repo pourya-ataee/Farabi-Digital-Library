@@ -454,10 +454,10 @@ footer * {
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
 .color-secondary {
-    color: #05425F
+    color: #05425F !important;
 }
 .color-text {
-    color: #747474;
+    color: #747474 !important;
 }
 .fs-14px {
     font-size: 14px;

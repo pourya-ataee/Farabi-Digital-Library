@@ -19,11 +19,14 @@
     flex-wrap: wrap;
     justify-content: start;
 }
+.main-newbooks .products-container .item {
+    background: #BCECE0;
+}
 .products-container .item {
     width: calc(50% - 12px);
     margin: 12px;
     border-radius: 8px;
-    background: #BCECE0;
+    background: #E7F2F8;
 }
 [lang="fa"] .products-container .item:nth-child(even) {
     margin-left: 0;
