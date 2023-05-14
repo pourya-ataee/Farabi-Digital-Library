@@ -367,7 +367,7 @@ header {
     padding: 80px 0 10px !important;
 }
 
-.library-list-section .item>.library-list-link {
+.library-list-section .item .library-list-link {
     width: fit-content;
     margin: auto;
     border-radius: 4px;
@@ -381,14 +381,18 @@ header {
     color: black;
 }
 
-.library-list-section .item>.library-list-link:hover {
+.library-list-section .item .library-list-link:hover {
     color: white;
     background: #05425F;
+}
+.library-list-section .item .library-list-link:hover .library-list-content {
+    color: white;
 }
 
 .library-list-section img {
     position: absolute;
     width: 100px !important;
+    max-height: 110px;
     top: 0;
     transform: translateY(-40%);
 }
@@ -457,6 +461,9 @@ footer * {
 }
 .fs-14px {
     font-size: 14px;
+}
+.text-justify {
+    text-align: justify;
 }
 @media (min-width: 1400px) {
     .w-xxl-fit {
