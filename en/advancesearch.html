@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- start::stylesheets -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/advancesearch.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/selectize.default.min.css">
+    <title>Farabi Digital Library - Advance search</title>
+    <!-- end::stylesheets -->
+</head>
+
+<body dir="ltr">
+    <!-- start::header -->
+    <header class="p-lg-4 p-3 library-header position-sticky top-0">
+        <!-- start::desktop header -->
+        <div class="container-xl container-fluid d-lg-flex d-none flex-row align-items-center gap-5">
+            <div>
+                <a href="index.html">
+                    <img class="library-logo" src="../assets/img/logo-bg.png" alt="logo">
+                </a>
+            </div>
+            <div class="flex-grow-1 d-flex flex-row align-items-center gap-xl-5 gap-4">
+                <a class="text-white text-decoration-none" href="index.html">HOME PAGE</a>
+                <a class="text-white text-decoration-none" href="advancesearch.html">ADVANCED SEARCH</a>
+                <a class="text-white text-decoration-none" href="faq.html">FAQ</a>
+            </div>
+            <div class="d-flex flex-row align-items-center gap-3">
+                <a href="contactus.html" class="bg-white rounded-1 text-black text-decoration-none py-1 px-xl-4 px-3">Contact us</a>
+                <div class="d-flex flex-row align-items-center bg-white rounded-1 overflow-hidden">
+                    <a href="#" class="py-1 px-3 text-white text-decoration-none library-bg-active">EN</a>
+                    <a href="../advancesearch.html" class="py-1 px-3 text-black text-decoration-none">فا</a>
+                </div>
+            </div>
+        </div>
+        <!-- end::desktop header -->
+        <!-- start::mobile header -->
+        <div class="container d-lg-none d-flex align-items-center justify-content-center">
+            <div class="cursor-pointer position-absolute start-0 z-1 pe-3">
+                <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="bi bi-list text-white fs-1 d-flex"></i>
+                </a>
+            </div>
+            <div>
+                <a href="index.html">
+                    <img class="library-logo" src="../assets/img/logo-bg.png" alt="logo">
+                </a>
+            </div>
+        </div>
+        <!-- end::mobile header -->
+        <!-- start::offcanvas mobile header -->
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    <a href="contactus.html"
+                        class="bg-white rounded-1 text-black text-decoration-none py-1 px-3 fs-6">Contact us</a>
+                </h5>
+                <button type="button" class="btn-close text-reset btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="d-flex flex-row align-items-center bg-white rounded-1 overflow-hidden lang">
+                    <a href="#" class="py-1 px-3 text-white text-decoration-none library-bg-active">EN</a>
+                    <a href="../advancesearch.html" class="py-1 px-3 text-black text-decoration-none">فا</a>
+                </div>
+                <div class="flex-grow-1 d-flex flex-column align-items-start gap-4 mt-5">
+                    <a class="text-white text-decoration-none" href="index.html">HOME PAGE</a>
+                    <a class="text-white text-decoration-none" href="advancesearch.html">ADVANCED SEARCH</a>
+                    <a class="text-white text-decoration-none" href="faq.html">FAQ</a>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex flex-column justify-content-center align-items-center mb-4">
+                <div class="d-flex gap-4 mb-2">
+                    <a href="#">
+                        <i class="bi bi-twitter text-white fs-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp text-white fs-4"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram text-white fs-4"></i>
+                    </a>
+                </div>
+                <div class="copy-right-header text-white text-center">
+                    ver 4.9-r1 All rights reserved © 1383-1395 · Parvan Pajooh
+                </div>
+            </div>
+        </div>
+        <!-- end::offcanvas mobile header -->
+    </header>
+    <!-- end::header -->
+
+    <main class="advancesearch">
+        <!-- start::breadcrumb -->
+        <breadcrumb class="d-flex align-items-center gap-4 container py-2">
+            <a href="index.html">Home page</a>
+            <i class="bi bi-chevron-right d-flex"></i>
+            <a href="advancesearch.html">Advance Search</a>
+        </breadcrumb>
+        <!-- end::breadcrumb -->
+        <!-- start::title & search -->
+        <section class="container pt-4 mb-5">
+            <!-- start::search form -->
+            <form action="#" method="post">
+                <div class="d-flex align-items-center border-bottom pb-5 mb-lg-5 mb-4 flex-wrap">
+                    <h1 class="fs-2 fw-bold me-xxl-5">Advance Search</h1>
+                    <div class="d-flex flex-column flex-grow-1 gap-lg-4">
+                        <!-- start::search row -->
+                        <div
+                            class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center align-items-lg-start align-items-center flex-lg-nowrap flex-wrap border-lg-0 custom-border-bottom pb-lg-0 pb-4">
+                            <div class="d-flex flex-column">
+                                <input type="text" placeholder="Your text" class="library-input">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="and-1" name="radio-1" value="و">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none"
+                                            for="and-1">AND</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="or-1" name="radio-1" value="r">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none"
+                                            for="or-1">OR</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="except-1" name="radio-1" value="except">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none" for="except-1">EXCEPT</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <select class="library-input select mt-lg-0 mt-4">
+                                <option value="">All Fields</option>
+                                <option value="1">test 1</option>
+                                <option value="2">test 2</option>
+                                <option value="3">test 3</option>
+                                <option value="4">test 4</option>
+                                <option value="5">test 5</option>
+                                <option value="6">test 6</option>
+                                <option value="7">test 7</option>
+                            </select>
+                            <div
+                                class="d-flex flex-lg-row flex-column gap-lg-4 gap-1 align-items-lg-center align-items-start mt-lg-0 mt-4">
+                                <label class="me-3 fw-light">Search in</label>
+                                <select class="library-input select">
+                                    <option value="">All fields</option>
+                                    <option value="1">test 1</option>
+                                    <option value="2">test 2</option>
+                                    <option value="3">test 3</option>
+                                    <option value="4">test 4</option>
+                                    <option value="5">test 5</option>
+                                    <option value="6">test 6</option>
+                                    <option value="7">test 7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- end::search row -->
+                        <!-- start::search row -->
+                        <div
+                            class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center align-items-lg-start align-items-center flex-lg-nowrap flex-wrap mt-lg-0 mt-4 border-lg-0 custom-border-bottom pb-lg-0 pb-4">
+                            <div class="d-flex flex-column">
+                                <input type="text" placeholder="Your text" class="library-input">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="and-2" name="radio-2" value="و">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none"
+                                            for="and-2">AND</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="or-2" name="radio-2" value="r">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none"
+                                            for="or-2">OR</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="except-2" name="radio-2" value="except">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none" for="except-2">EXCEPT</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <select class="library-input select mt-lg-0 mt-4">
+                                <option value="">All fields</option>
+                                <option value="1">test 1</option>
+                                <option value="2">test 2</option>
+                                <option value="3">test 3</option>
+                                <option value="4">test 4</option>
+                                <option value="5">test 5</option>
+                                <option value="6">test 6</option>
+                                <option value="7">test 7</option>
+                            </select>
+                            <div
+                                class="d-flex flex-lg-row flex-column gap-lg-4 gap-1 align-items-lg-center align-items-start mt-lg-0 mt-4">
+                                <label class="me-3 fw-light">Search in</label>
+                                <select class="library-input select">
+                                    <option value="">All fields</option>
+                                    <option value="1">test 1</option>
+                                    <option value="2">test 2</option>
+                                    <option value="3">test 3</option>
+                                    <option value="4">test 4</option>
+                                    <option value="5">test 5</option>
+                                    <option value="6">test 6</option>
+                                    <option value="7">test 7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- end::search row -->
+                        <!-- start::search row -->
+                        <div
+                            class="d-flex flex-lg-row flex-column justify-content-lg-between justify-content-center align-items-lg-start align-items-center flex-lg-nowrap flex-wrap mt-lg-0 mt-4">
+                            <div class="d-flex flex-column">
+                                <input type="text" placeholder="Your text" class="library-input">
+                                <div class="d-flex justify-content-between mt-2">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="and-3" name="radio-3" value="و">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none"
+                                            for="and-3">AND</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="or-3" name="radio-3" value="r">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none"
+                                            for="or-3">OR</label><br>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="except-3" name="radio-3" value="except">
+                                        <label class="ps-2 fw-light cursor-pointer user-select-none" for="except-3">EXCEPT</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <select class="library-input select mt-lg-0 mt-4">
+                                <option value="">All fields</option>
+                                <option value="1">test 1</option>
+                                <option value="2">test 2</option>
+                                <option value="3">test 3</option>
+                                <option value="4">test 4</option>
+                                <option value="5">test 5</option>
+                                <option value="6">test 6</option>
+                                <option value="7">test 7</option>
+                            </select>
+                            <div
+                                class="d-flex flex-lg-row flex-column gap-lg-4 gap-1 align-items-lg-center align-items-start mt-lg-0 mt-4">
+                                <label class="me-3 fw-light">Search in</label>
+                                <select class="library-input select">
+                                    <option value="">All fields</option>
+                                    <option value="1">test 1</option>
+                                    <option value="2">test 2</option>
+                                    <option value="3">test 3</option>
+                                    <option value="4">test 4</option>
+                                    <option value="5">test 5</option>
+                                    <option value="6">test 6</option>
+                                    <option value="7">test 7</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- end::search row -->
+                    </div>
+                </div>
+                <div
+                    class="d-flex flex-lg-row flex-column justify-content-center justify-content-lg-between align-items-lg-start align-items-center mt-lg-4 flex-wrap">
+                    <div
+                        class="d-flex gap-xl-4 gap-1 align-items-center mt-lg-0 mt-4 justify-content-center flex-sm-nowrap flex-wrap">
+                        <label class="me-xxl-3 me-lg-1 me-3 fw-light">Search in</label>
+                        <select class="library-input select">
+                            <option value="">All fields</option>
+                            <option value="1">test 1</option>
+                            <option value="2">test 2</option>
+                            <option value="3">test 3</option>
+                            <option value="4">test 4</option>
+                            <option value="5">test 5</option>
+                            <option value="6">test 6</option>
+                            <option value="7">test 7</option>
+                        </select>
+                    </div>
+                    <div
+                        class="d-flex gap-xl-4 gap-1 align-items-center mt-lg-0 mt-4 justify-content-center flex-sm-nowrap flex-wrap">
+                        <label class="me-xxl-3 me-lg-1 me-3 fw-light">Search in</label>
+                        <select class="library-input select">
+                            <option value="">Digital and non-digital</option>
+                            <option value="1">test 1</option>
+                            <option value="2">test 2</option>
+                            <option value="3">test 3</option>
+                            <option value="4">test 4</option>
+                            <option value="5">test 5</option>
+                            <option value="6">test 6</option>
+                            <option value="7">test 7</option>
+                        </select>
+                    </div>
+                    <div
+                        class="d-flex gap-xl-4 gap-1 align-items-center mt-lg-0 mt-4 justify-content-center flex-sm-nowrap flex-wrap">
+                        <label class="me-xxl-3 me-lg-1 me-3 fw-light">Search in</label>
+                        <select class="library-input select">
+                            <option value="">Digital and non-digital</option>
+                            <option value="1">test 1</option>
+                            <option value="2">test 2</option>
+                            <option value="3">test 3</option>
+                            <option value="4">test 4</option>
+                            <option value="5">test 5</option>
+                            <option value="6">test 6</option>
+                            <option value="7">test 7</option>
+                        </select>
+                    </div>
+                    <div class="mt-xxl-0 mt-4 w-xxl-fit custom-w-100 text-center">
+                        <button type="submit" class="border-0 rounded-1 py-1 px-5 library-primary-button">SEARCH</button>
+                    </div>
+                </div>
+            </form>
+            <!-- end::search form -->
+        </section>
+        <!-- end::title & search -->
+        <!-- start::read more -->
+        <section class="pt-5 container">
+            <h5 class="library-section-title">Searching strategy</h5>
+            <p class="search-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br /><br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <br /><br />
+            <div class="w-100 text-center">
+                <div class="collapse" id="read-more">
+                    <div class="card card-body p-0 border-0">
+                        <p class="search-paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <br /><br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <br /><br />
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <button class="btn d-flex m-auto align-items-center read-more collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#read-more" aria-expanded="false"
+                    aria-controls="read-more">
+                    SHOW MORE
+                    <span class="icon ms-2">
+                        <i class="bi bi-chevron-up d-flex"></i>
+                    </span>
+                </button>
+            </div>
+            </p>
+        </section>
+        <!-- end::read more -->
+    </main>
+
+    <!-- start::footer section -->
+    <footer>
+        <div
+            class="container-xl container-fluid d-flex flex-lg-nowrap flex-wrap justify-content-between position-relative z-1">
+            <div class="text-center library-mobile-w-100">ver 4.9-r1 All rights reserved © 1383-1395 · Parvan Pajooh</div>
+            <div class="d-flex gap-5 justify-content-center text-center library-mobile-w-100 mt-lg-0 mt-4">
+                SOCIAL MEDIA
+                <div class="d-flex gap-3">
+                    <a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center library-mobile-w-100 mt-lg-0 mt-4">Islamic Council Research Center 1395</div>
+        </div>
+    </footer>
+    <!-- end::footer section -->
+
+    <!-- start::scripts -->
+    <script src="../assets/js/jquery-3.6.4.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/selectize.min.js"></script>
+    <!-- start::custom script -->
+    <script>
+        $(function () {
+            $('.library-input.select').selectize();
+        });
+        (function () {
+            const collapseElementList = document.querySelectorAll('.collapse')
+            const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl, hide))
+        })();
+    </script>
+    <!-- end::custom script -->
+    <!-- end::scripts -->
+</body>
+
+</html>
