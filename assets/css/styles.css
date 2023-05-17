@@ -379,6 +379,9 @@ header {
         -moz-box-shadow: 3px 4px 6px 0px rgba(116, 116, 116, 0.3);
     transition: 0.3s;
     color: black;
+    width: 216px;
+    height: 132px;
+    justify-content: space-between;
 }
 
 .library-list-section .item .library-list-link:hover {
@@ -402,6 +405,10 @@ header {
     margin-top: 8px;
     text-align: center;
     max-width: 200px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .cursor-pointer {
@@ -507,6 +514,18 @@ footer * {
     }
     .library-gap {
         margin-top: 32px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .library-logo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .library-logo {
+        width: unset;
     }
 }
 

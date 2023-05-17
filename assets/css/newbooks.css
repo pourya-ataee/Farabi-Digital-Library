@@ -110,6 +110,16 @@
 .product-list-container td:not(:first-child){
     color: #05425F;
 }
+.list-result td {
+    max-width: 400px;
+    padding: 16px 8px;
+}
+[lang="fa"] .list-result td.text {
+    text-align: right;
+}
+[lang="en"] .list-result td.text {
+    text-align: left;
+}
 @media (max-width: 1199px) {
     .products-container .item {
         width: 100%;
